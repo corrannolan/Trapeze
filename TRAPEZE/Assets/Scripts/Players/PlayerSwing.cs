@@ -42,6 +42,10 @@ public class PlayerSwing : MonoBehaviour
                 if(brake == false)
                 {
                     brake = true;
+
+                    Vector2 down = new Vector2(0, -1000);
+                    p.rBody.AddForce(down);
+
                     Brake(brakeDrag);
                 }
             }
@@ -50,6 +54,7 @@ public class PlayerSwing : MonoBehaviour
                 if (brake == true)
                 {
                     Brake(normDrag);
+
                     brake = false;
                 }
             }
