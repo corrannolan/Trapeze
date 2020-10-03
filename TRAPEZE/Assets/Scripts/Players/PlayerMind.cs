@@ -16,6 +16,8 @@ public class PlayerMind : MonoBehaviour
 
     public Rigidbody2D rBody;
 
+    public bool canInput = false;
+
     // Start is called before the first frame update
     void Start()
     {

@@ -17,7 +17,7 @@ public class PlayerGrab : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Grab();
     }
 
     // Update is called once per frame

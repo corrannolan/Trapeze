@@ -367,3 +367,4 @@ Assets\Rewired\Internal\Scripts\Platforms\Ouya\OuyaInputSource.cs
 Assets\Scripts\Players\PlayerGrab.cs
 Assets\Scripts\Players\PlayerMind.cs
 Assets\Scripts\Players\PlayerSwing.cs
+Assets\Scripts\Stage\StageBuilder.cs
