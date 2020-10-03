@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class StageBuilder : MonoBehaviour
 {
-    List<GameObject> stageBars = new List<GameObject>();
-    List<Vector2> barPos = new List<Vector2>();
+    public List<GameObject> stageBars = new List<GameObject>();
+    public List<Vector2> barPos = new List<Vector2>();
 
     public PlayerMind p1, p2;
     float pFar;
@@ -24,6 +24,8 @@ public class StageBuilder : MonoBehaviour
 
         p1.canInput = true;
         p2.canInput = true;
+
+        p1.StartBar(stageBars[0]);
     }
 
     // Update is called once per frame

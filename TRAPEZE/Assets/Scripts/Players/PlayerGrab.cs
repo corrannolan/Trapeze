@@ -17,7 +17,7 @@ public class PlayerGrab : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Grab();
+
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class PlayerGrab : MonoBehaviour
         if (p.player.GetButtonDown("Grab"))
         {
             if (canGrab == true && grabbed == false)
-                Grab();
+                Grab(bar);
         }
         else if (p.player.GetButtonUp("Grab"))
         {
@@ -59,7 +59,7 @@ public class PlayerGrab : MonoBehaviour
         }
     }
 
-    void Grab()
+    public void Grab(GameObject bar)
     {
         sHinge.connectedBody = bar.GetComponent<Rigidbody2D>();
         sHinge.enabled = true;

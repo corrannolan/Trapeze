@@ -30,6 +30,11 @@ public class PlayerMind : MonoBehaviour
         
     }
 
+    public void StartBar(GameObject startBar)
+    {
+        pGrab.Grab(startBar);
+    }
+
     public Vector2 Vec2Pos(Transform obj)
     {
         Vector2 objPos2D = new Vector2(obj.position.x, obj.position.y);
